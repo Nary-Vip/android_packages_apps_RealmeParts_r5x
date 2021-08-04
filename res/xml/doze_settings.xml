@@ -37,11 +37,18 @@
         android:title="@string/tilt_sensor_title">
 
         <SwitchPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="gesture_pick_up"
             android:summary="@string/pick_up_gesture_summary"
             android:title="@string/pick_up_gesture_title"
             android:icon="@drawable/ic_pickup" />
+        
+        <SwitchPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="gesture_raise_to_wake"
+            android:summary="@string/raise_to_wake_gesture_summary"
+            android:title="@string/raise_to_wake_gesture_title" />
 
     </PreferenceCategory>
 
